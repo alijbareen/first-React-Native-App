@@ -21,7 +21,7 @@ const ListScreen = () => {
       }}
       data={friends}
       renderItem={({ item }) => {
-        return <Text>{item.name}</Text>;
+        return <Text style={styles.textStyle}>{item.name}</Text>;
       }}
     />
   );
@@ -29,7 +29,7 @@ const ListScreen = () => {
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontSize: 45,
+    marginVertical: 50,
   },
 });
 
