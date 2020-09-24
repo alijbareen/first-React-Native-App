@@ -5,7 +5,7 @@ import { Text, StyleSheet, View, Button } from "react-native";
 const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      <Text style={styles.text}>New Style</Text>
+      <Text style={styles.text}>Ali Jbareen</Text>
       <Button
         onPress={() => {
           navigation.navigate("Components");
