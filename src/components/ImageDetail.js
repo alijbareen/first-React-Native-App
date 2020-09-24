@@ -11,10 +11,6 @@ const ImageDetail = ({ imageSource, imageScore, title }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 30,
-  },
-});
+const styles = StyleSheet.create({});
 
 export default ImageDetail;
