@@ -1,14 +1,29 @@
 import React, { Component } from "react";
 import { Text, StyleSheet, View } from "react-native";
+import ImageDetail from "../components/ImageDetail";
 
 const ImageScreen = () => {
-  return <Text>Screen</Text>;
+  return (
+    <View>
+      <ImageDetail
+        title="Forest"
+        imageSource={require("../../assets/forest.jpg")}
+        imageScore={7}
+      />
+      <ImageDetail
+        title="Beach"
+        imageSource={require("../../assets/beach.jpg")}
+        imageScore={7}
+      />
+      <ImageDetail
+        title="Mountain"
+        imageSource={require("../../assets/mountain.jpg")}
+        imageScore={7}
+      />
+    </View>
+  );
 };
 
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 30,
-  },
-});
+const styles = StyleSheet.create({});
 
 export default ImageScreen;
