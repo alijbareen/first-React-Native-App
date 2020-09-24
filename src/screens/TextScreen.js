@@ -6,7 +6,7 @@ const TextScreen = () => {
 
   return (
     <View>
-      <Text>Enter Name</Text>
+      <Text>Enter Password</Text>
       <TextInput
         style={styles.input}
         autoCorrect={false}
@@ -16,7 +16,10 @@ const TextScreen = () => {
           setName(newText);
         }}
       />
-      <Text>My name is {name}</Text>
+
+      {name.length < 5 ? (
+        <Text>Password must be longer than 5 charachtes</Text>
+      ) : null}
     </View>
   );
 };
