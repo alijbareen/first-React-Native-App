@@ -2,6 +2,9 @@ import React, { Component, useState } from "react";
 import { Text, StyleSheet, View, Button, FlatList } from "react-native";
 import ColorCounter from "../components/ColorCounter";
 
+//App now is Ready
+//Start Optimizing
+
 const SquareScreen = () => {
   const COLOR_INCREMENT = 15;
 
